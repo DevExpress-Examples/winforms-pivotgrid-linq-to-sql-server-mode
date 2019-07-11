@@ -11,4 +11,4 @@ Toggle the button to the _Server Mode_ position to bind the PivotGridControl to 
 
 ![screenshot](/images/screenshot.png)
 
-> SQL queries are written to the Output window in Visual Studio IDE, so you can see what is going on behind the scene.
+> SQL queries are logged to the Output window in Visual Studio IDE, so you can see what is going on behind the scene.

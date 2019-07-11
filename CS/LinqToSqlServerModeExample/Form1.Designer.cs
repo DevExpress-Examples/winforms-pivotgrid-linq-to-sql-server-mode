@@ -141,11 +141,6 @@
             // 
             this.invoicesTableAdapter.ClearBeforeFill = true;
             // 
-            // linqServerModeSource1
-            // 
-            this.linqServerModeSource1.ElementType = typeof(LinqToSqlServerModeExample.Invoice);
-            this.linqServerModeSource1.KeyExpression = "OrderID";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

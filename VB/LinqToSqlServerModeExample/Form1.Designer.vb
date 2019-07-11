@@ -132,11 +132,6 @@
 			' 
 			Me.invoicesTableAdapter.ClearBeforeFill = True
 			' 
-			' linqServerModeSource1
-			' 
-			Me.linqServerModeSource1.ElementType = GetType(LinqToSqlServerModeExample.Invoice)
-			Me.linqServerModeSource1.KeyExpression = "OrderID"
-			' 
 			' Form1
 			' 
 			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)

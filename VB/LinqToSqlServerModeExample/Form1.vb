@@ -14,6 +14,8 @@ Namespace LinqToSqlServerModeExample
 		Private serverMode As Boolean = False
 		Public Sub New()
 			InitializeComponent()
+			linqServerModeSource1.ElementType = GetType(Invoice)
+			linqServerModeSource1.KeyExpression = "OrderID"
 			Dim dc As New NWindDataContext()
 			dc.Log = Console.Out
 			linqServerModeSource1.QueryableSource = dc.Invoices

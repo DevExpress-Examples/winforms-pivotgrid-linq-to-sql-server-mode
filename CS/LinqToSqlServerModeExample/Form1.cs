@@ -15,6 +15,8 @@ namespace LinqToSqlServerModeExample
         public Form1()
         {
             InitializeComponent();
+            linqServerModeSource1.ElementType = typeof(Invoice);
+            linqServerModeSource1.KeyExpression = "OrderID";
             NWindDataContext dc = new NWindDataContext();
             dc.Log = Console.Out;
             linqServerModeSource1.QueryableSource = dc.Invoices;
