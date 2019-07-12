@@ -1,5 +1,6 @@
 ﻿Imports DevExpress.Data.Linq
 Imports DevExpress.XtraEditors
+Imports System
 
 Namespace LinqToSqlServerModeExample
 	Partial Public Class Form1
@@ -13,7 +14,6 @@ Namespace LinqToSqlServerModeExample
 			linqServerModeSource1 = New LinqServerModeSource With {.ElementType = GetType(Invoice), .KeyExpression = "OrderID"}
 			' Create the data context and enable query logging.
 			Dim dc As NWindDataContext = New NWindDataContext With {.Log = Console.Out}
-			'
 			' Specify the queryable source that provides data items.
 			linqServerModeSource1.QueryableSource = dc.Invoices
 		End Sub
