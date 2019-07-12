@@ -12,3 +12,9 @@ Toggle the button to the _Server Mode_ position to bind the PivotGridControl to 
 ![screenshot](/images/screenshot.png)
 
 > SQL queries are logged to the Output window in Visual Studio IDE, so you can see what is going on behind the scene.
+
+
+See also:
+
+* [LINQ to SQL](https://docs.microsoft.com/dotnet/framework/data/adonet/sql/linq/)
+* [Server Mode](https://docs.devexpress.com/WindowsForms/17856)
