@@ -40,14 +40,12 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.toggleSwitch1 = new DevExpress.XtraEditors.ToggleSwitch();
             this.invoicesTableAdapter = new LinqToSqlServerModeExample.NWDataSetTableAdapters.InvoicesTableAdapter();
-            this.linqServerModeSource1 = new DevExpress.Data.Linq.LinqServerModeSource();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.invoicesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nWDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.linqServerModeSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // pivotGridControl1
@@ -157,7 +155,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.linqServerModeSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -174,7 +171,6 @@
         private DevExpress.XtraPivotGrid.PivotGridField fieldOrderDateYear;
         private DevExpress.XtraPivotGrid.PivotGridField fieldExtendedPrice;
         private DevExpress.XtraPivotGrid.PivotGridField fieldOrderDateMonth;
-        private DevExpress.Data.Linq.LinqServerModeSource linqServerModeSource1;
         private DevExpress.XtraEditors.ToggleSwitch toggleSwitch1;
     }
 }

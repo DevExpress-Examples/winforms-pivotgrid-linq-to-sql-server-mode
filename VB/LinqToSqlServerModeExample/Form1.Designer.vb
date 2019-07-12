@@ -35,14 +35,12 @@
 			Me.panelControl1 = New DevExpress.XtraEditors.PanelControl()
 			Me.toggleSwitch1 = New DevExpress.XtraEditors.ToggleSwitch()
 			Me.invoicesTableAdapter = New LinqToSqlServerModeExample.NWDataSetTableAdapters.InvoicesTableAdapter()
-			Me.linqServerModeSource1 = New DevExpress.Data.Linq.LinqServerModeSource()
 			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
 			DirectCast(Me.invoicesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
 			DirectCast(Me.nWDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
 			DirectCast(Me.panelControl1, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.panelControl1.SuspendLayout()
 			DirectCast(Me.toggleSwitch1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.linqServerModeSource1, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' pivotGridControl1
@@ -149,7 +147,6 @@
 			DirectCast(Me.panelControl1, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.panelControl1.ResumeLayout(False)
 			DirectCast(Me.toggleSwitch1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.linqServerModeSource1, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
 		End Sub
@@ -166,7 +163,6 @@
 		Private fieldOrderDateYear As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldExtendedPrice As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldOrderDateMonth As DevExpress.XtraPivotGrid.PivotGridField
-		Private linqServerModeSource1 As DevExpress.Data.Linq.LinqServerModeSource
 		Private WithEvents toggleSwitch1 As DevExpress.XtraEditors.ToggleSwitch
 	End Class
 End Namespace

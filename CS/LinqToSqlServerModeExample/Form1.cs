@@ -1,24 +1,25 @@
-﻿using DevExpress.XtraEditors;
-using DevExpress.XtraGrid;
-using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraPivotGrid;
+﻿using DevExpress.Data.Linq;
+using DevExpress.XtraEditors;
 using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Windows.Forms;
 
 namespace LinqToSqlServerModeExample
 {
     public partial class Form1 : DevExpress.XtraEditors.XtraForm
     {
+        LinqServerModeSource linqServerModeSource1;
         bool serverMode = false;
         public Form1()
         {
             InitializeComponent();
-            linqServerModeSource1.ElementType = typeof(Invoice);
-            linqServerModeSource1.KeyExpression = "OrderID";
-            NWindDataContext dc = new NWindDataContext();
-            dc.Log = Console.Out;
+            // Create LINQ Server Mode data source.
+            linqServerModeSource1 = new LinqServerModeSource
+            {
+                ElementType = typeof(Invoice),
+                KeyExpression = "OrderID"
+            };
+            // Create the data context and enable query logging.
+            NWindDataContext dc = new NWindDataContext { Log = Console.Out };
+            // Specify the queryable source that provides data items.
             linqServerModeSource1.QueryableSource = dc.Invoices;
         }
 

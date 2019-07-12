@@ -1,23 +1,20 @@
-﻿Imports DevExpress.XtraEditors
-Imports DevExpress.XtraGrid
-Imports DevExpress.XtraGrid.Views.Grid
-Imports DevExpress.XtraPivotGrid
-Imports System
-Imports System.Collections.Generic
-Imports System.Drawing
-Imports System.Windows.Forms
+﻿Imports DevExpress.Data.Linq
+Imports DevExpress.XtraEditors
 
 Namespace LinqToSqlServerModeExample
 	Partial Public Class Form1
 		Inherits DevExpress.XtraEditors.XtraForm
 
+		Private linqServerModeSource1 As LinqServerModeSource
 		Private serverMode As Boolean = False
 		Public Sub New()
 			InitializeComponent()
-			linqServerModeSource1.ElementType = GetType(Invoice)
-			linqServerModeSource1.KeyExpression = "OrderID"
-			Dim dc As New NWindDataContext()
-			dc.Log = Console.Out
+			' Create LINQ Server Mode data source.
+			linqServerModeSource1 = New LinqServerModeSource With {.ElementType = GetType(Invoice), .KeyExpression = "OrderID"}
+			' Create the data context and enable query logging.
+			Dim dc As NWindDataContext = New NWindDataContext With {.Log = Console.Out}
+			'
+			' Specify the queryable source that provides data items.
 			linqServerModeSource1.QueryableSource = dc.Invoices
 		End Sub
 
