@@ -36,62 +36,27 @@ To use LINQ to SQL in the Pivot Grid application, do the following:
 
 ### Bind a Pivot Grid Control to the LinqServerModeSource component
 
-3. Drag the **LinqServerModeSource** component and drop it onto the Form. 
+Drag the **LinqServerModeSource** component and drop it onto the Form. 
 	
-	![Server Mode Add LINQ Component](./images/server-mode-add-linq-component25462.png)
+![Server Mode Add LINQ Component](./images/server-mode-add-linq-component25462.png)
 
-	> [!Note]
-	> Alternatively, you can create the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) in code at runtime.
+> [!Note]
+> Alternatively, you can create the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) in code at runtime.
 
-4. Specify the type of objects retrieved from a data source with the [LinqServerModeSource.ElementType](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.ElementType) and [LinqServerModeSource.KeyExpression](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.KeyExpression) properties:
+Specify the following properties:
 
-	**CS code**: 
-	
-	```csharp
-	linqServerModeSource1.ElementType = typeof(Invoice);
-	linqServerModeSource1.KeyExpression = "OrderID";
-	```
-	
-	**VB code**: 
-	
-	```vb
-	linqServerModeSource1.ElementType = GetType(Invoice)
-	linqServerModeSource1.KeyExpression = "OrderID"
-	```
+- [LinqServerModeSource.ElementType](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.ElementType) and [LinqServerModeSource.KeyExpression](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.KeyExpression).
+	Specify the type of objects retrieved from a data source.
 
-5. Specify the queryable source using the [LinqServerModeSource.QueryableSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.QueryableSource) property:
+- [LinqServerModeSource.QueryableSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.QueryableSource)
+ 	Specifies the queryable source.
 
-	**CS code**: 
+See the code: [Form1.cs](./CS/LinqToSqlServerModeExample/Form1.cs#L15-L24)/[Form1.vb](./VB/LinqToSqlServerModeExample/Form1.vb#L14-L19)
 	
-	```csharp
-	linqServerModeSource1.QueryableSource = dc.Invoices;
-	```
-	
-	**VB code**: 
-	
-	```vb
-	linqServerModeSource1.QueryableSource = dc.Invoices
-	```
-	
-6. Bind the Pivot Grid control to the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) component:
+Then, bind the Pivot Grid control to the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) component.
 
-	**CS code**: 
-	
-	```csharp
-	pivotGridControl1.DataSource = linqServerModeSource1;
-	```
-	
-	**VB code**: 
-	
-	```vb
-	pivotGridControl1.DataSource = linqServerModeSource1
-	```	
-	
-See the full code: [Form1.cs](./CS/LinqToSqlServerModeExample/Form1.cs)/[Form1.vb](./VB/LinqToSqlServerModeExample/Form1.vb)
+Run the project. The PivotGridControl works in server mode because it is bound to the LINQ-to-SQL data source. You can see the generated SQL statements in the Visual Studio Output window.
 
-7. Run the project. The PivotGridControl works in server mode because it is bound to the LINQ-to-SQL data source. You can see the generated SQL statements in the Visual Studio Output window.
-
-See also:
-
+## Documentation
 * [LINQ to SQL](https://docs.microsoft.com/dotnet/framework/data/adonet/sql/linq/)
 * [Server Mode](https://docs.devexpress.com/WindowsForms/17856)
