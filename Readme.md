@@ -43,54 +43,48 @@ Toggle the button to the _Server Mode_ position to bind the PivotGridControl to 
 
 4. Specify the type of objects retrieved from a data source with the [LinqServerModeSource.ElementType](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.ElementType) and [LinqServerModeSource.KeyExpression](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.KeyExpression) properties:
 
-	# [C#](#tab/tabid-csharp)
+	**CS code**: 
 	
 	```csharp
 	linqServerModeSource1.ElementType = typeof(Invoice);
 	linqServerModeSource1.KeyExpression = "OrderID";
 	```
 	
-	# [VB.NET](#tab/tabid-vb)
+	**VB code**: 
 	
 	```vb
 	linqServerModeSource1.ElementType = GetType(Invoice)
 	linqServerModeSource1.KeyExpression = "OrderID"
 	```
 
-	***
-
 5. Specify the queryable source using the [LinqServerModeSource.QueryableSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.QueryableSource) property:
 
-	# [C#](#tab/tabid-csharp)
+	**CS code**: 
 	
 	```csharp
 	linqServerModeSource1.QueryableSource = dc.Invoices;
 	```
 	
-	# [VB.NET](#tab/tabid-vb)
+	**VB code**: 
 	
 	```vb
 	linqServerModeSource1.QueryableSource = dc.Invoices
 	```
 	
-	***
-
 6. Bind the Pivot Grid control to the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) component:
 
-	# [C#](#tab/tabid-csharp)
+	**CS code**: 
 	
 	```csharp
 	pivotGridControl1.DataSource = linqServerModeSource1;
 	```
 	
-	# [VB.NET](#tab/tabid-vb)
+	**VB code**: 
 	
 	```vb
 	pivotGridControl1.DataSource = linqServerModeSource1
 	```	
 	
-	***
-
 See the full code: [Form1.cs](./CS/LinqToSqlServerModeExample/Form1.cs)/[Form1.vb](./VB/LinqToSqlServerModeExample/Form1.vb)
 
 7. Run the project. The PivotGridControl works in server mode because it is bound to the LINQ-to-SQL data source. You can see the generated SQL statements in the Visual Studio Output window.
