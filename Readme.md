@@ -51,7 +51,7 @@ To use LINQ to SQL in the Pivot Grid application, do the following:
 	- [LinqServerModeSource.QueryableSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.QueryableSource)
  	Specifies the queryable source.
 
-	See the code: [Form1.cs](./CS/LinqToSqlServerModeExample/Form1.cs#L15-L24)/[Form1.vb](./VB/LinqToSqlServerModeExample/Form1.vb#L14-L19)
+	See the code: [Form1.cs](./CS/LinqToSqlServerModeExample/Form1.cs#L15-L24)/[Form1.vb](./VB/LinqToSqlServerModeExample/Form1.vb#L14-L18)
 	
 5. Bind the Pivot Grid control to the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) component.
 
