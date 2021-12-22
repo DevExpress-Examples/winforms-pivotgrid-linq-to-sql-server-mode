@@ -36,14 +36,14 @@ To use LINQ to SQL in the Pivot Grid application, do the following:
 
 ### Bind a Pivot Grid Control to the LinqServerModeSource component
 
-Drag the **LinqServerModeSource** component and drop it onto the Form. 
+3. Drag the **LinqServerModeSource** component and drop it onto the Form. 
 	
 ![Server Mode Add LINQ Component](./images/server-mode-add-linq-component25462.png)
 
 > [!Note]
 > Alternatively, you can create the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) in code at runtime.
 
-Specify the following properties:
+4. Specify the following properties:
 
 - [LinqServerModeSource.ElementType](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.ElementType) and [LinqServerModeSource.KeyExpression](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource.KeyExpression).
 	Specify the type of objects retrieved from a data source.
@@ -53,10 +53,10 @@ Specify the following properties:
 
 See the code: [Form1.cs](./CS/LinqToSqlServerModeExample/Form1.cs#L15-L24)/[Form1.vb](./VB/LinqToSqlServerModeExample/Form1.vb#L14-L19)
 	
-Then, bind the Pivot Grid control to the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) component.
+5. Bind the Pivot Grid control to the [LinqServerModeSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Linq.LinqServerModeSource) component.
 
-Run the project. The PivotGridControl works in server mode because it is bound to the LINQ-to-SQL data source. You can see the generated SQL statements in the Visual Studio Output window.
+6. Run the project. The PivotGridControl works in server mode because it is bound to the LINQ-to-SQL data source. You can see the generated SQL statements in the Visual Studio Output window.
 
 ## Documentation
 * [LINQ to SQL](https://docs.microsoft.com/dotnet/framework/data/adonet/sql/linq/)
-* [Server Mode](https://docs.devexpress.com/WindowsForms/17856)
+* [Server Mode](https://docs.devexpress.com/WindowsForms/17856/controls-and-libraries/pivot-grid/binding-to-data/database-server-mode)
