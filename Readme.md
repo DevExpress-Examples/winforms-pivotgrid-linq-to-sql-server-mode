@@ -19,9 +19,9 @@ Toggle the button to the _Server Mode_ position to bind the PivotGridControl to 
 
 ## Example Overview
 
-### Create Data Classes
-
 To use LINQ to SQL in the Pivot Grid application, do the following:
+
+### Create Data Classes
 
 1. Add **LINQ to SQL Classes** to the project.
 	
