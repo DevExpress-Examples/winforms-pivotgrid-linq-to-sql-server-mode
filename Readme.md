@@ -8,7 +8,7 @@ This example demonstrates the PivotGridControl that is bound to LINQ to SQL clas
 
 ## Files to Look At
 
-[Form1.cs](./CS/LinqToSqlServerModeExample/Form1.cs)/[Form1.vb](./VB/LinqToSqlServerModeExample/Form1.vb)
+[Form1.cs](./CS/LinqToSqlServerModeExample/Form1.cs) ([Form1.vb](./VB/LinqToSqlServerModeExample/Form1.vb))
 
 ## Example Overview
 
