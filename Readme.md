@@ -4,7 +4,7 @@
 <!-- default badges end -->
 # PivotGridControl and LINQ to SQL - a Server Mode Example
 
-This example demonstrates the PivotGridControl that is bound to LINQ to SQL classes and operates in Server mode.
+This example demonstrates a PivotGridControl bound to LINQ and SQL classes and operates in server mode.
 
 ## Files to Look At
 
