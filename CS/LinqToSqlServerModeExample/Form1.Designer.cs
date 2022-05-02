@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding1 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding2 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding3 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding4 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding5 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
             this.fieldCountry = new DevExpress.XtraPivotGrid.PivotGridField();
             this.fieldCity = new DevExpress.XtraPivotGrid.PivotGridField();
@@ -59,6 +64,7 @@
             this.fieldOrderDateMonth});
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 49);
             this.pivotGridControl1.Name = "pivotGridControl1";
+            this.pivotGridControl1.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized;
             this.pivotGridControl1.Size = new System.Drawing.Size(800, 401);
             this.pivotGridControl1.TabIndex = 0;
             // 
@@ -67,7 +73,8 @@
             this.fieldCountry.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
             this.fieldCountry.AreaIndex = 0;
             this.fieldCountry.Caption = "Country";
-            this.fieldCountry.FieldName = "Country";
+            dataSourceColumnBinding1.ColumnName = "Country";
+            this.fieldCountry.DataBinding = dataSourceColumnBinding1;
             this.fieldCountry.Name = "fieldCountry";
             // 
             // fieldCity
@@ -75,7 +82,8 @@
             this.fieldCity.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
             this.fieldCity.AreaIndex = 1;
             this.fieldCity.Caption = "City";
-            this.fieldCity.FieldName = "City";
+            dataSourceColumnBinding2.ColumnName = "City";
+            this.fieldCity.DataBinding = dataSourceColumnBinding2;
             this.fieldCity.Name = "fieldCity";
             // 
             // fieldOrderDateYear
@@ -83,17 +91,18 @@
             this.fieldOrderDateYear.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
             this.fieldOrderDateYear.AreaIndex = 0;
             this.fieldOrderDateYear.Caption = "Order Year";
-            this.fieldOrderDateYear.FieldName = "OrderDate";
-            this.fieldOrderDateYear.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateYear;
+            dataSourceColumnBinding3.ColumnName = "OrderDate";
+            dataSourceColumnBinding3.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateYear;
+            this.fieldOrderDateYear.DataBinding = dataSourceColumnBinding3;
             this.fieldOrderDateYear.Name = "fieldOrderDateYear";
-            this.fieldOrderDateYear.UnboundFieldName = "fldYear";
             // 
             // fieldExtendedPrice
             // 
             this.fieldExtendedPrice.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
             this.fieldExtendedPrice.AreaIndex = 0;
             this.fieldExtendedPrice.Caption = "Extended Price";
-            this.fieldExtendedPrice.FieldName = "ExtendedPrice";
+            dataSourceColumnBinding4.ColumnName = "ExtendedPrice";
+            this.fieldExtendedPrice.DataBinding = dataSourceColumnBinding4;
             this.fieldExtendedPrice.Name = "fieldExtendedPrice";
             // 
             // fieldOrderDateMonth
@@ -101,10 +110,10 @@
             this.fieldOrderDateMonth.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
             this.fieldOrderDateMonth.AreaIndex = 1;
             this.fieldOrderDateMonth.Caption = "Order Month";
-            this.fieldOrderDateMonth.FieldName = "OrderDate";
-            this.fieldOrderDateMonth.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateMonth;
+            dataSourceColumnBinding5.ColumnName = "OrderDate";
+            dataSourceColumnBinding5.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateMonth;
+            this.fieldOrderDateMonth.DataBinding = dataSourceColumnBinding5;
             this.fieldOrderDateMonth.Name = "fieldOrderDateMonth";
-            this.fieldOrderDateMonth.UnboundFieldName = "fldMonth";
             // 
             // invoicesBindingSource
             // 
