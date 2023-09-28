@@ -7,7 +7,7 @@
 
 This example demonstrates a PivotGridControl bound to LINQ and SQL classes and operates in server mode.
 
-## Files to Look At
+## Files to Review
 
 [Form1.cs](./CS/LinqToSqlServerModeExample/Form1.cs) ([Form1.vb](./VB/LinqToSqlServerModeExample/Form1.vb))
 
